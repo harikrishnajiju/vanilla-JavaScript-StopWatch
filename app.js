@@ -1,9 +1,11 @@
 window.onload = function () {
 
-    var sec = 00;
+    var seconds = 00;
     var tens = 00;
+    var minutes = 00;
     var appendTens = document.getElementById("tens");
     var appendSeconds = document.getElementById("seconds");
+    var appendMinutes = document.getElementById("minutes");
     var buttonStart = document.getElementById("start");
     var buttonStop = document.getElementById("stop");
     var buttonReset = document.getElementById("reset");
@@ -23,8 +25,10 @@ window.onload = function () {
         clearInterval(Interval);
         tens = "00"
         seconds = "00";
+        minutes = "00"
         appendTens.innerHTML = tens;
         appendSeconds.innerHTML = seconds;
+        appendMinutes.innerHTML = minutes;
     }
 
     function startTimer () {
@@ -48,6 +52,15 @@ window.onload = function () {
 
         if(seconds > 9) {
             appendSeconds.innerHTML = seconds;
+        }
+
+        if(seconds > 59) {
+            console.log("minutes")
+            minutes++;
+            appendMinutes.innerHTML = minutes;
+            seconds = 0;
+            appendSeconds.innerHTML = seconds;
+            
         }
     }
 }
