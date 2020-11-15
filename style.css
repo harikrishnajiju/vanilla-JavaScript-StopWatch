@@ -1,0 +1,28 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Wrapper {
+    margin: 50px auto;
+    text-align: center;
+} 
+
+#start {
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+#stop {
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+#reset {
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
